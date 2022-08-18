@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="front">
+                <img src="card-logo.svg" alt="card-logo" />
+                <h2 id="mid">0000 0000 0000 0000</h2>
+                <h3 id="butt">Jane Appleseed<span id="year">00/00</span></h3>
+            </div>
+            <div id="back">
+                <h4 id="cvc">000</h4>
+            </div>
+        </div>
+        <div id="right">
+            <div id="box">
+                <form>
+                    <label for="name">Cardholder Name</label>
+                    <br />
+                    <input type="text" placeholder=" e.g. Jane Appleseed" class="same" />
+                    <br />
+                    <label for="number">Card Number</label>
+                    <br />
+                    <input type="number" placeholder=" e.g. 1234 5678 9123 0000" class="same" />
+                    <br />
+
+                    <div id="sep">
+                        <div id="one">
+                            <label for="number" class="diff"> Exp. Date (MM/YY) </label>
+                            <br />
+                            <input type="number" placeholder=" MM" class="short" />
+                            <input type="number" placeholder=" YY" class="short" />
+                        </div>
+                        <div id="two">
+                            <label for="number" class="diff">CVC </label>
+                            <br />
+                            <input type="number" placeholder="e.g. 123" class="short" />
+                        </div>
+                    </div>
+
+                    <input type="submit" value="  Confirm" />
+
+                    <br />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="card.js"></script>
+</body>
+
+</html>
