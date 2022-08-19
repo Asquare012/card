@@ -31,15 +31,15 @@
 }
 
 #container #left #front img {
-    padding: 20px 0 50px 20px;
+    padding: 20px 0 40px 20px;
 }
 
 #container #left #front h2 {
     text-align: center;
-    font-size: 28px;
-    padding: 0 0 10px 0;
-    word-spacing: 2px;
-    letter-spacing: 1px;
+    font-size: 25px;
+    padding: 0 0 20px 0;
+    word-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: lighter;
 }
 
@@ -51,7 +51,7 @@
 }
 
 #container #left #front #year {
-    padding: 0 0 0 125px;
+    padding: 0 0 0 95px;
 }
 
 #container #left #back {
@@ -67,7 +67,7 @@
     position: relative;
     top: 84px;
     left: 270px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
     letter-spacing: 1px;
 }
@@ -203,19 +203,46 @@ input[type="submit"] {
         flex-direction: column;
     }
     #container #left {
-        height: 50%;
+        height: 40%;
+    }
+    #container #left div {
+        height: 200px;
+        width: 300px;
     }
     #container #left #front {
-        top: 195px;
-        left: 30px;
+        top: 155px;
+        left: 32px;
         z-index: 1;
     }
+    #container #left #front h2 {
+        font-size: 22px;
+        padding: 0 0 25px 0;
+    }
+    #container #left #front img {
+        height: 70px;
+        padding-left: 27px;
+    }
+    #container #left #front #butt {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    #container #left #front #year {
+        padding: 0 0 0 63px;
+    }
+    #container #left #front img {
+        padding-bottom: 20px;
+    }
     #container #left #back {
-        top: -110px;
-        left: 100px;
+        top: -137px;
+        left: 95px;
+    }
+    #container #left #back #cvc {
+        top: 72px;
+        left: 232px;
+        font-size: 15px;
     }
     #right #box {
-        margin-top: 80px;
+        margin-top: 70px;
         height: 330px !important;
         width: 100vw !important;
         display: flex;
