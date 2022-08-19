@@ -112,7 +112,6 @@ input[type="number"]::-webkit-inner-spin-button,
 }
 
 #sep {
-    width: 100%;
     display: flex;
 }
 
@@ -201,9 +200,11 @@ input[type="submit"] {
     }
     #container {
         flex-direction: column;
+        width: 100vw;
     }
     #container #left {
         height: 40%;
+        width: 100vw;
     }
     #container #left div {
         height: 200px;
@@ -262,6 +263,65 @@ input[type="submit"] {
     }
     input[type="submit"] {
         width: 100%;
-        padding: 12px 0;
+        padding: 13px 0;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+}
+
+
+/* smaller mobile */
+
+@media screen and (max-width: 375px) {
+    #container #left div {
+        height: 190px;
+        width: 270px;
+    }
+    #container #left #front {
+        top: 180px;
+        left: 15px;
+    }
+    #container #left #front img {
+        margin-left: -12px;
+    }
+    #container #left #front h2 {
+        font-size: 20px;
+    }
+    #container #left #front #butt {
+        padding-left: 12px;
+    }
+    #container #left #back {
+        top: -94px;
+        left: 68px;
+    }
+    #container #left #back #cvc {
+        top: 65px;
+        left: 210px;
+    }
+    #container #right #box {
+        padding: 0 20px;
+    }
+    #container #right #box label {
+        font-size: 12px;
+    }
+    #container #right #box .diff {
+        font-size: 12px;
+    }
+    #spe {
+        padding-left: 22px;
+    }
+    #container #right #box .same {
+        padding: 9px 150px 9px 5px;
+        font-size: 12px;
+    }
+    #sep #one input {
+        width: 60px;
+        outline: none;
+        padding: 9px 40px 9px 5px;
+    }
+    #sep #two input {
+        width: 85%;
+        padding: 8px 20px 8px 5px;
+        margin: 5px 0 30px 20px;
     }
 }
