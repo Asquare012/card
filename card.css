@@ -52,6 +52,7 @@
 
 #container #left #front #year {
     padding: 0 0 0 95px;
+    font-size: 13px;
 }
 
 #container #left #back {
@@ -150,6 +151,8 @@ input[type="submit"] {
     background-color: #21092f;
     color: #ffffff;
     padding: 9px 128px;
+    border: none;
+    outline: none;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
@@ -203,15 +206,16 @@ input[type="submit"] {
         width: 100vw;
     }
     #container #left {
-        height: 40%;
+        height: 33%;
         width: 100vw;
+        margin-bottom: 40px;
     }
     #container #left div {
         height: 200px;
         width: 300px;
     }
     #container #left #front {
-        top: 155px;
+        top: 115px;
         left: 32px;
         z-index: 1;
     }
@@ -234,7 +238,7 @@ input[type="submit"] {
         padding-bottom: 20px;
     }
     #container #left #back {
-        top: -137px;
+        top: -175px;
         left: 95px;
     }
     #container #left #back #cvc {
@@ -243,7 +247,6 @@ input[type="submit"] {
         font-size: 15px;
     }
     #right #box {
-        margin-top: 70px;
         height: 330px !important;
         width: 100vw !important;
         display: flex;
@@ -272,13 +275,13 @@ input[type="submit"] {
 
 /* smaller mobile */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     #container #left div {
         height: 190px;
         width: 270px;
     }
     #container #left #front {
-        top: 180px;
+        top: 125px;
         left: 15px;
     }
     #container #left #front img {
@@ -291,7 +294,7 @@ input[type="submit"] {
         padding-left: 12px;
     }
     #container #left #back {
-        top: -94px;
+        top: -148px;
         left: 68px;
     }
     #container #left #back #cvc {
@@ -320,8 +323,32 @@ input[type="submit"] {
         padding: 9px 40px 9px 5px;
     }
     #sep #two input {
-        width: 85%;
+        width: 75%;
         padding: 8px 20px 8px 5px;
         margin: 5px 0 30px 20px;
+    }
+}
+
+
+/* smallest size */
+
+@media screen and (max-width: 343px) {
+    #container #left #back {
+        left: 53px;
+    }
+    #container #left #front {
+        left: 6px;
+    }
+    #sep #two input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #container #left #back {
+        left: 45px;
+    }
+    #container #left #front {
+        left: 4px;
     }
 }
