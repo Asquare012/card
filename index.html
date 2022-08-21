@@ -16,7 +16,7 @@
             <div id="front">
                 <img src="card-logo.svg" alt="card-logo" />
                 <h2 id="mid">0000 0000 0000 0000</h2>
-                <h3 id="butt">JANE APPLESEED<span id="year">00/00</span></h3>
+                <span id="butt">JANE APPLESEED</span><span id="year">00/00</span>
             </div>
             <div id="back">
                 <h4 id="cvc">000</h4>
@@ -27,13 +27,12 @@
                 <form>
                     <label for="name">CARDHOLDER NAME</label>
                     <br />
-                    <input type="text" placeholder=" e.g. Jane Appleseed" class="same" />
+                    <input type="text" placeholder=" e.g. Jane Appleseed" class="same" id="fullName" maxlength="20" onkeyup="card()" />
                     <br />
                     <label for="number">CARD NUMBER</label>
                     <br />
-                    <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="same" maxlength="16" />
+                    <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="same" maxlength="16" id="num" onkeyup="cardTwo()" />
                     <br />
-
                     <div id="sep">
                         <div id="one">
                             <label for="date" class="diff"> EXP. DATE (MM/YY) </label>
@@ -48,7 +47,7 @@
                         </div>
                     </div>
 
-                    <input type="submit" value="  Confirm" />
+                    <input type="submit" value="  Confirm" onclick="sub()" />
 
                     <br />
                 </form>
